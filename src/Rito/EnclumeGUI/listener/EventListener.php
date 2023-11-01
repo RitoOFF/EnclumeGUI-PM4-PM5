@@ -47,7 +47,7 @@ class EventListener implements Listener{
                             }elseif ($config->get("xp-enclume") === true) {
                                 if ($player->getXpManager()->getXpLevel() === $config->get("prix.repair-xp")){
                                     $player->removeCurrentWindow();
-                                    $player->getXpManager()->setXpLevel($player->getXpManager()->getXpLevel() - $config->get("prix.repair-xp"));
+                                    $player->getXpManager()->subtractXpLevels($config->get("prix.repair-xp"));
                                     $itemhand->setDamage(0);
                                     $player->getInventory()->setItemInHand($itemhand);
                                     $player->broadcastSound(new AnvilUseSound());
