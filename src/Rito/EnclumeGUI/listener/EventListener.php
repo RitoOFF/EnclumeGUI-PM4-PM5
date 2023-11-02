@@ -22,6 +22,7 @@ class EventListener implements Listener{
         $player = $event->getPlayer();
         $itemhand = $player->getInventory()->getItemInHand();
         if ($event->getBlock()->getTypeId() === VanillaBlocks::ANVIL()->getTypeId()){
+            $event->cancel();
             if ($itemhand instanceof Tool | $itemhand instanceof Armor){
                 $menu = InvMenu::create(InvMenu::TYPE_CHEST);
                 $inventory = $menu->getInventory();
