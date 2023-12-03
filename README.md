@@ -1,5 +1,5 @@
 # Plugin EnclumeGUI
-- Hey voici un plugin qui permet d'afficher le discord quand on intéragie avec un outils/une épée/ une pièce de votre armure sur une enclume.
+- Hey voici un plugin qui permet d'afficher le une enclume en gui pour pocketmine quand on intéragie avec un outils/une épée/ une pièce de votre armure sur une enclume.
   avec une config si vous voulez utiliser l'xp ou l'argent !
 
 -> API 5.0.0, 4.0.0
